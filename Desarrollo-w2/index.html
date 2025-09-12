@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="auto"> 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Este es el 2do desarrollo es de mi empresa">
+  <meta name="author" content="Raul Perez">
+  <title>MARAKAA</title>
+
+  <!-- Bootstrap CSS desde CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> 
+
+  <!-- Mi hoja de estilos personalizada -->
+  <link href="styles.css" rel="stylesheet">
+
+  <meta name="theme-color" content="#712cf9">
+</head>
+
+<body> 
+
+  <!-- Barra de navegación -->
+  <header data-bs-theme="dark">
+    <nav class="navbar navbar-expand-md fixed-top mi-navbar">
+     <!--<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">-->
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">MARAKAA</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+
+    <!-- Carousel -->
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+      <!-- Indicadores -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <!-- Slides -->
+
+         <!-- Primer imagen de slides -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://images.pexels.com/photos/8724096/pexels-photo-8724096.jpeg" alt="Primera imagen" width="100%">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+          </svg>
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>MARAKAA</h1>
+              <p class="opacity-75">MARAKAA La mejor fabrica de paletas y helados del mundo</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Empezar ahora</a></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Segunda imagen de slides -->
+        <div class="carousel-item">
+           <img src="https://images.pexels.com/photos/8724098/pexels-photo-8724098.jpeg" alt="Primera imagen" width="100%">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+          </svg>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Nuestra historia</h1>
+              <p>Conoce como nació esta increible familia </p>
+              <p><a class="btn btn-lg btn-primary" href="#">Descubrir más...</a></p>
+            </div>
+          </div>
+        </div>
+
+<!-- Tercera imagen de slides -->
+        <div class="carousel-item">
+          <img src="https://images.pexels.com/photos/8705929/pexels-photo-8705929.jpeg" alt="Primera imagen" width="100%">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+          </svg>
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>Nuestros sabores</h1>
+              <p>No solo refrescamos tu día, incrementamos tus posibilidades</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Explorar galería</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controles -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">regresar</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+
+    <!-- Marketing -->
+    <div class="container marketing my-5">
+      <div class="row text-center">
+        <div class="col-lg-4">
+          <img src="IMG/paleta.jpg" class="bd-placeholder-img rounded-circle mb-3" alt="Imagen 1" width="280px" height="280px">
+          <h2 class="fw-normal">Paletas</h2>
+          <p>El único limite es tu imaginación</p>
+          <p><a class="btn btn-secondary" href="#">Ver más... &raquo;</a></p>
+        </div>
+
+        <div class="col-lg-4">
+          <img src="IMG/helado.jpg" class="bd-placeholder-img rounded-circle mb-3" alt="Imagen 2" width="280px" height="280px">
+          <h2 class="fw-normal">Helados</h2>
+          <p>Podrás crear cualquer sabor que te imagines</p>
+          <p><a class="btn btn-secondary" href="#">Ver más... &raquo;</a></p>
+        </div>
+
+        <div class="col-lg-4">
+          <img src="IMG/nieve.jpg" class="bd-placeholder-img rounded-circle mb-3" alt="Imagen 3" width="280px" height="280px">
+          <h2 class="fw-normal">Nieves</h2>
+          <p>¿A quién no lo gusta refrescarse con el sabor de una deliciosa y jugosa fruta?</p>
+          <p><a class="btn btn-secondary" href="#">Ver más... &raquo;</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featurettes -->
+    <div class="container my-5">
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">Experiencia Elite <span class="text-body-secondary">sin limites</span></h2>
+          <p class="lead">Disfruta de un sabor único en todo el mundo</p>
+        </div>
+        <div class="col-md-5">
+          <img src="https://plus.unsplash.com/premium_photo-1667683701912-ffbe82dab706?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTk3fHxoZWxhZG9zfGVufDB8fDB8fHww" class="img-fluid mx-auto" alt="Feature 1" >
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading fw-normal lh-1">Variedad de sabores <span class="text-body-secondary">para todos los gustos.</span></h2>
+          <p class="lead">Desde clásicos hasta los más raros y especiales </p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img src="https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTQ0fHxoZWxhZG9zfGVufDB8fDB8fHww" class="img-fluid mx-auto" alt="Feature 2">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">Siempre consintiendo tu paladar <span class="text-body-secondary">desde cualquer parte</span></h2>
+          <p class="lead">Solo únete a nuestra membresia y podras disfrutar de todos los beneficios</p>
+        </div>
+        <div class="col-md-5">
+          <img src="https://plus.unsplash.com/premium_photo-1661658446408-cd1249ee936f?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTQwfHxoZWxhZG9zfGVufDB8fDB8fHww" class="img-fluid mx-auto" alt="Feature 3">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+    </div>
+
+    <!-- Footer -->
+    <footer class="container text-center py-4">
+      <p class="float-end"><a href="#">Regresar al inicio</a></p>
+      <p>&copy; Derechos reservados 2025 MARAKAA &middot; <a href="#">Privacidad</a> &middot; <a href="#">Términos y condiciones</a></p>
+    </footer>
+  </main>
+
+  <!-- Bootstrap JS desde CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
